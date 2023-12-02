@@ -1,0 +1,17 @@
+<%-include("partials/header.ejs")%>
+<div class = "button-column">
+    <ul class = "menu-list">
+    <%for (let i = 0; i<buttArray.length; i++){%>
+        <%var button_href = "/"+buttArray[i].toLowerCase()%>
+        <li><form action = <%=button_href%> > <button type="submit" class = "button-61" ><%=buttArray[i]%></button></form></li>
+    <%}%>
+    </ul>
+</div>
+<div class = "context-column ">
+    <%-include(actionpage)%>
+</div>
+
+
+
+
+<%-include("partials/footer.ejs")%>
